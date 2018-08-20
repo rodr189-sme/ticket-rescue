@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='pt'>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+
+	<meta name="description" content="Site para cupons de ingressos de shows">
+	<meta name="keywords" content="Cupom, desconto, ingresso">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<meta property="og:locale" content="pt_BR">
+
+	<meta property="og:url" content="site">
+
+	<meta property="og:title" content="Quer ganhar um cupom de desconto para o show">
+	<meta property="og:site_name" content="Clique aqui e descubra como">
+
+	<meta property="og:description" content="Quer ganhar um cupom de desconto para o show">
+
+	<meta property="og:image" content="imagem">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="800"> 
+	<meta property="og:image:height" content="600"> 
+
+	<meta property="og:type" content="website">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+
+
+	<title>Ticket - Nome do campanha</title>
+</head>
+<body>
+
+
+	<section class="jumbotron bg-img">
+		<div class="container">
+			<div class='row text-center hero-text'>
+				<div class="col-lg-10 offset-lg-1">
+					<img  src="img/background.jpg" class='hero-top'>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box">
+		<div class="container">
+			<div class='row text-center'>
+				<div class="col-lg-8 offset-lg-2">
+					<h1 class='title animated fadeInDown color'>Desculpe! :(</h1>
+					<h2 class='description animated fadeInUp'>Parece que não há mais cupons disponíveis!</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+
+
+
+	<footer></footer>
+	
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='js/custom.js'></script>
+	<script type="text/javascript" src='js/progressbar.min.js'></script>
+
+	<script type="text/javascript">
+		var bar = new ProgressBar.Line('#progressBar', {
+			easing: 'easeInOut',
+			strokeWidth: 1,
+			duration: 30000,
+			text: {
+				style: {
+					color: '#00b09b',
+					padding: 0,
+					margin: 0,
+					transform: null
+				},
+				autoStyleContainer: false
+			},
+			from: {color: '#96c93d'},
+			to: {color: '#00b09b'},
+			step: (state, bar) => {
+				bar.setText(Math.round(bar.value() * 100) + ' %');
+				bar.path.setAttribute('stroke', state.color);
+				bar.text.style.fontSize = '3rem';
+				bar.text.style.fontWeight = '800';
+			}
+		});
+		bar.animate(1);  // Value from 0.0 to 1.0
+	</script>
+
+</body>
+</html>
